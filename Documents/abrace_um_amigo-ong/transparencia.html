@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência | Abrace Um Amigo</title> 
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Abrace Um Amigo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos Sociais</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacoes.html">Como Doar</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Prestação de Contas e Relatórios</h1>
+
+        <figure>
+            <img src="img/prestacao_contas.jpeg" alt="Pessoa revisando documentos financeiros e gráficos." loading="lazy">
+            <figcaption>Clareza e responsabilidade na gestão dos recursos.</figcaption>
+        </figure>
+
+        <section>
+            <h2>Documentos Oficiais</h2>
+            <p>Nosso compromisso é com a clareza total na aplicação dos recursos e na gestão da ONG. Abaixo, você encontra nossos principais documentos públicos.</p>
+
+            <dl>
+                <dt>Estatuto Social</dt>
+                <dd>Documento que define a finalidade, estrutura e regras de funcionamento da Abrace Um Amigo. (Atualizado em <time datetime="2024">2024</time>)</dd>
+
+                <dt>Balanço Anual - 2023</dt>
+                <dd>Relatório financeiro completo detalhando receitas (doações) e despesas (veterinária, ração, logística) do ano fiscal anterior.</dd>
+
+                <dt>Certificado de Utilidade Pública Federal</dt>
+                <dd>Documento que atesta o reconhecimento da ONG pelo Governo Federal. (Emitido em <time datetime="2020">2020</time>)</dd>
+
+                <dt>Regulamento Interno para Voluntários</dt>
+                <dd>Conjunto de normas e diretrizes para garantir a segurança e o bem-estar de todos os voluntários e animais.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Distribuição de Recursos por Projeto (Gráfico de Pizza)</h2>
+            <p>Detalha como cada real doado é investido nas nossas áreas de atuação.</p>
+            <canvas id="graficoPizza" width="600" height="300">Seu navegador não suporta o elemento canvas. Por favor, visualize a tabela de dados.</canvas>
+        </section>
+
+        <section>
+            <h2>Metas e Progresso</h2>
+            <p>Acompanhe nosso progresso em tempo real nas campanhas ativas.</p>
+            <progress id="meta_castracao" max="1000" value="850">85%</progress>
+            <label for="meta_castracao">Castrações (Meta: 1000)</label>
+            
+            <progress id="meta_adocoes" max="500" value="380">76%</progress>
+            <label for="meta_adocoes">Adoções (Meta: 500)</label>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>© 2025 Abrace Um Amigo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
