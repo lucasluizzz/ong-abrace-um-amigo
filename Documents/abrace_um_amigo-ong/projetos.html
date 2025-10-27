@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Projetos | Abrace Um Amigo</title> 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
         <h1>Abrace Um Amigo</h1>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     </header>
 
-    <nav>
+    <nav id="menu-principal">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -26,71 +37,70 @@
     </nav>
 
     <main>
-        <h1>Projetos Atuais de Resgate e Adoção</h1>
-
-        <p>Nossos projetos são mantidos com o apoio da comunidade. Além de participar deles, você pode fazer parte da nossa rede se <a href="cadastro.html">cadastrando</a> para ser um voluntário ou fazendo uma doação. Saiba <a href="doacoes.html">Como Doar</a>.</p>
-
-        <section>
-            <h2>Nossas Campanhas de Impacto</h2>
+        <div class="container">
             
-            <h3>1. Campanha de Castração Social</h3>
-            <p>Oferecemos castração gratuita ou a preço reduzido para animais de famílias de baixa renda e resgatados, combatendo a superpopulação de forma humanitária. Sua ajuda financia a cirurgia, medicamentos e cuidados pós-operatórios.</p>
-            <figure>
-                <img src="img/projeto_castracao.jpeg" alt="Imagem de um veterinário realizando uma cirurgia em um animal." loading="lazy">
-                <figcaption>O controle populacional é a melhor forma de combater o abandono.</figcaption>
-            </figure>
+            <h1>Projetos Atuais de Resgate e Adoção</h1>
 
-            <h3>2. Programa Lar Temporário</h3>
-            <p>Buscamos lares temporários seguros e amorosos para animais em recuperação, que aguardam a adoção definitiva. O lar temporário é crucial para a reabilitação física e emocional.</p>
-            <figure>
-                <img src="img/projeto_lar_temporario.jpeg" alt="Cachorro em um sofá com uma família, em um lar temporário." loading="lazy">
-                <figcaption>Seja um lar temporário e salve uma vida.</figcaption>
-            </figure>
+            <p>Nossos projetos são mantidos com o apoio da comunidade. Além de participar deles, você pode fazer parte da nossa rede se <a href="cadastro.html">cadastrando</a> para ser um voluntário ou fazendo uma doação. Saiba <a href="doacoes.html">Como Doar</a>.</p>
 
-            <h3>Impacto Social por Projeto (Gráfico de Barras)</h3>
-            <p>Visualização do número de animais impactados por cada projeto ao longo do último ano.</p>
-            <canvas id="graficoBarras" width="600" height="300">Seu navegador não suporta o elemento canvas. Por favor, visualize a tabela de dados.</canvas>
+            <section>
+                <h2>Nossas Campanhas de Impacto</h2>
+                
+                <h3>1. Campanha de Castração Social</h3>
+                <p>Oferecemos castração gratuita ou a preço reduzido para animais de famílias de baixa renda e resgatados, combatendo a superpopulação de forma humanitária. Sua ajuda financia a cirurgia, medicamentos e cuidados pós-operatórios.</p>
+                <figure>
+                    <img src="img/projeto_castracao.jpeg" alt="Imagem de um veterinário realizando uma cirurgia em um animal." loading="lazy">
+                    <figcaption>O controle populacional é a melhor forma de combater o abandono.</figcaption>
+                </figure>
 
-        </section>
+                <h3>2. Programa Lar Temporário</h3>
+                <p>Buscamos lares temporários seguros e amorosos para animais em recuperação, que aguardam a adoção definitiva. O lar temporário é crucial para a reabilitação física e emocional.</p>
+                <figure>
+                    <img src="img/projeto_lar_temporario.jpeg" alt="Cachorro em um sofá com uma família, em um lar temporário." loading="lazy">
+                    <figcaption>Seja um lar temporário e salve uma vida.</figcaption>
+                </figure>
 
-        <section>
-            <h2>Inscreva-se em um Projeto</h2>
-            <p>Se você tem experiência ou interesse em um de nossos projetos, preencha o formulário abaixo para se inscrever.</p>
-            
-            <form action="#" method="POST">
-    
-                <fieldset>
-                    <legend>Dados de Inscrição</legend>
-    
-                    <label for="insc_nome">Seu Nome:</label>
-                    <input type="text" id="insc_nome" name="nome" required><br>
-    
-                    <label for="insc_email">Seu E-mail:</label>
-                    <input type="email" id="insc_email" name="email" required><br>
-    
-                    <label for="projeto_interesse">Projeto de Interesse:</label>
-                    <select id="projeto_interesse" name="projeto" required>
-                        <option value="" disabled selected>-- Escolha um Projeto --</option>
-                        <option value="castracao_social">Campanha de Castração Social</option>
-                        <option value="lar_temporario">Programa Lar Temporário</option>
-                        <option value="resgate_emergencial">Resgate de Animais de Rua</option>
-                        <option value="feiras_adocao">Feiras de Adoção Mensais</option>
-                    </select>
-            
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Motivação</legend>
-    
-                    <label for="motivacao">Por que você quer participar deste projeto?</label><br>
-                    <textarea id="motivacao" name="motivacao" rows="4" required></textarea>
-            
-                </fieldset>
-    
-                <button type="submit">Inscrever-se no Projeto</button>
-            </form>
-        </section>
+            </section>
 
+            <section>
+                <h2>Inscreva-se em um Projeto</h2>
+                <p>Se você tem experiência ou interesse em um de nossos projetos, preencha o formulário abaixo para se inscrever.</p>
+                
+                <form action="#" method="POST">
+        
+                    <fieldset>
+                        <legend>Dados de Inscrição</legend>
+        
+                        <label for="insc_nome">Seu Nome:</label>
+                        <input type="text" id="insc_nome" name="nome" required>
+        
+                        <label for="insc_email">Seu E-mail:</label>
+                        <input type="email" id="insc_email" name="email" required>
+        
+                        <label for="projeto_interesse">Projeto de Interesse:</label>
+                        <select id="projeto_interesse" name="projeto" required>
+                            <option value="" disabled selected>-- Escolha um Projeto --</option>
+                            <option value="castracao_social">Campanha de Castração Social</option>
+                            <option value="lar_temporario">Programa Lar Temporário</option>
+                            <option value="resgate_emergencial">Resgate de Animais de Rua</option>
+                            <option value="feiras_adocao">Feiras de Adoção Mensais</option>
+                        </select>
+                
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Motivação</legend>
+        
+                        <label for="motivacao">Por que você quer participar deste projeto?</label>
+                        <textarea id="motivacao" name="motivacao" rows="4" required></textarea>
+                
+                    </fieldset>
+        
+                    <button type="submit">Inscrever-se no Projeto</button>
+                </form>
+            </section>
+        
+        </div>
     </main>
     
     <footer>

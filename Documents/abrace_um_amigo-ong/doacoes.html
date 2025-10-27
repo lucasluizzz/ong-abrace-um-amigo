@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como Doar | Abrace Um Amigo</title> 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
         <h1>Abrace Um Amigo</h1>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     </header>
 
-    <nav>
+    <nav id="menu-principal">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -26,49 +37,52 @@
     </nav>
 
     <main>
-        <h1>Ajude a Causa Animal</h1>
-
-        <figure>
-            <img src="img/doacao_razao.jpeg" alt="Saco de ração e pote de comida para animais." loading="lazy">
-            <figcaption>Sua doação garante alimentação, vacinas e tratamento médico.</figcaption>
-        </figure>
-
-        <article>
-            <h2>Doação Financeira Direta</h2>
-            <p>Sua doação financeira é vital para cobrir custos de cirurgias, medicamentos, vacinas e ração.</p>
-            <p>Você pode doar via PIX ou transferência bancária. A chave PIX é o nosso CNPJ.</p>
+        <div class="container">
             
-            <section>
-                <h3>Dados Bancários</h3>
-                <p><strong>Banco:</strong> 341 - Itaú</p>
-                <p><strong>Agência:</strong> 0123</p>
-                <p><strong>Conta Corrente:</strong> 45678-9</p>
-                <p><strong>CNPJ (Chave PIX):</strong> 99.999.999/0001-00</p>
-            </section>
-        </article>
+            <h1>Ajude a Causa Animal</h1>
 
-        <hr>
-
-        <article>
-            <h2>Doação de Itens Físicos</h2>
             <figure>
-                <img src="img/doacao_cobertores.jpeg" alt="Cobertores e casinhas para animais." loading="lazy">
-                <figcaption>Aceitamos cobertores, remédios e brinquedos em bom estado.</figcaption>
+                <img src="img/doacao_razao.jpeg" alt="Saco de ração e pote de comida para animais." loading="lazy">
+                <figcaption>Sua doação garante alimentação, vacinas e tratamento médico.</figcaption>
             </figure>
-            <p>Aceitamos ração, medicamentos, cobertores, jornais, brinquedos e outros itens essenciais para o dia a dia dos animais resgatados.</p>
-            
-            <section>
-                <h3>Ponto de Coleta Principal</h3>
-                <address>
-                    Rua dos Resgates, 100<br>
-                    Bairro da Adoção, Porto Alegre - RS<br>
-                    CEP: 01234-567<br>
-                    Horário: Segunda a Sexta, 9h às 17h
-                </address>
-                <p><small>Em caso de grandes volumes, utilize a página de Contato para agendar a retirada.</small></p>
-            </section>
-        </article>
 
+            <article>
+                <h2>Doação Financeira Direta</h2>
+                <p>Sua doação financeira é vital para cobrir custos de cirurgias, medicamentos, vacinas e ração.</p>
+                <p>Você pode doar via PIX ou transferência bancária. A chave PIX é o nosso CNPJ.</p>
+                
+                <section>
+                    <h3>Dados Bancários</h3>
+                    <p><strong>Banco:</strong> 341 - Itaú</p>
+                    <p><strong>Agência:</strong> 0123</p>
+                    <p><strong>Conta Corrente:</strong> 45678-9</p>
+                    <p><strong>CNPJ (Chave PIX):</strong> 99.999.999/0001-00</p>
+                </section>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2>Doação de Itens Físicos</h2>
+                <figure>
+                    <img src="img/doacao_cobertores.jpeg" alt="Cobertores e casinhas para animais." loading="lazy">
+                    <figcaption>Aceitamos cobertores, remédios e brinquedos em bom estado.</figcaption>
+                </figure>
+                <p>Aceitamos ração, medicamentos, cobertores, jornais, brinquedos e outros itens essenciais para o dia a dia dos animais resgatados.</p>
+                
+                <section>
+                    <h3>Ponto de Coleta Principal</h3>
+                    <address>
+                        Rua dos Resgates, 100<br>
+                        Bairro da Adoção, Porto Alegre - RS<br>
+                        CEP: 01234-567<br>
+                        Horário: Segunda a Sexta, 9h às 17h
+                    </address>
+                    <p><small>Em caso de grandes volumes, utilize a página de Contato para agendar a retirada.</small></p>
+                </section>
+            </article>
+        
+        </div>
     </main>
     
     <footer>

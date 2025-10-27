@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog e Notícias | Abrace Um Amigo</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico"> 
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
         <h1>Abrace Um Amigo</h1>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     </header>
 
-    <nav>
+    <nav id="menu-principal">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -26,39 +37,57 @@
     </nav>
 
     <main>
-        <h1>Últimas Notícias e Histórias de Sucesso</h1>  
+        <div class="container">
+            
+            <h1>Blog e Notícias da AUA</h1>
+            <p>Acompanhe nossas últimas novidades, histórias de resgate, dicas de cuidados e eventos.</p>
 
-        <section>
-            <h2>Destaques da Semana</h2>
+            <section>
+                <h2>Destaques</h2>
 
-            <article>
-                <h3>O Milagre do Resgate de Luna</h3>
-                <p>Publicado em: <time datetime="2025-09-01">1 de Setembro de 2025</time> | Por: Equipe AUA</p>
+                <article>
+                    <h3>Resgate de Emergência: Luna, a Sobrevivente das Enchentes</h3>
+                    <p>Publicado em: <time datetime="2025-09-01">01 de Setembro de 2025</time> | Por: Lucas Luiz</p>
+                    
+                    <figure>
+                        <img src="img/luna.jpeg" alt="Cachorra Luna após o resgate" loading="lazy">
+                        <figcaption>Luna, resgatada das enchentes, agora está em recuperação.</figcaption>
+                    </figure>
+
+                    <p>A história de Luna é um lembrete do porquê o nosso trabalho é essencial. Encontrada debilitada na zona sul, ela agora recebe os cuidados necessários para encontrar um lar. <a href="index.html">Leia a história completa...</a></p>
+                </article>
+
+                <hr>
+
+                <article>
+                    <h3>500 Castrações Realizadas no Mês: Um Marco de Saúde Pública</h3>
+                    <p>Publicado em: <time datetime="2025-08-25">25 de Agosto de 2025</time> | Por: Lucas Luiz</p>
+                    
+                    <figure>
+                        <img src="img/castracao.jpeg" alt="Veterinário preparando animal para cirurgia de castração" loading="lazy">
+                        <figcaption>Nossa Campanha Social de Castração atingiu um marco histórico na região leste.</figcaption>
+                    </figure>
+                    
+                    <p>Graças ao apoio de nossos doadores, conseguimos realizar mais de 500 procedimentos de castração, controlando a população de rua e garantindo mais saúde aos animais. <a href="index.html">Saiba mais sobre a campanha...</a></p>
+                </article>
+
+                <hr>
                 
-                <figure>
-                    <img src="img/luna.jpeg" alt="Cachorra Luna após o resgate" loading="lazy">
-                    <figcaption>Luna, resgatada das enchentes, agora está em recuperação.</figcaption>
-                </figure>
+                <article>
+                    <h3>Dicas de Ouro: Como Preparar Sua Casa para um Gato Adotado</h3>
+                    <p>Publicado em: <time datetime="2025-08-10">10 de Agosto de 2025</time> | Por: Lucas Luiz</p>
+                    
+                    <figure>
+                        <img src="img/dicas_gato.jpeg" alt="Gato deitado confortavelmente em uma casa." loading="lazy">
+                        <figcaption>Dicas práticas para a transição do abrigo para o lar permanente.</figcaption>
+                    </figure>
+                    
+                    <p>Adotar um gato é maravilhoso, mas a preparação é a chave para uma adaptação tranquila. Cobrimos desde a caixa de areia ideal até os melhores brinquedos anti-tédio. <a href="index.html">Confira as dicas!</a></p>
+                </article>
 
-                <p>A história de Luna é um lembrete do porquê o nosso trabalho é essencial. Encontrada debilitada na zona sul, ela agora recebe os cuidados necessários para encontrar um lar. <a href="#">Leia a história completa...</a></p>
-            </article>
-
-            <hr>
-
-            <article>
-                <h3>500 Castrações Realizadas no Mês</h3>
-                <p>Publicado em: <time datetime="2025-08-25">25 de Agosto de 2025</time> | Por: Dr. Veterinário</p>
-                
-                <figure>
-                    <img src="img/castracao.jpeg" alt="Veterinário preparando animal para cirurgia de castração" loading="lazy">
-                    <figcaption>Nossa Campanha Social de Castração atingiu um marco histórico na região leste.</figcaption>
-                </figure>
-                
-                <p>Graças ao apoio de nossos doadores, conseguimos realizar mais de 500 procedimentos de castração, controlando a população de rua e garantindo mais saúde aos animais. <a href="#">Saiba mais sobre a campanha...</a></p>
-            </article>
-
-        </section>
-
+            </section>
+        
+        </div>
     </main>
     
     <footer>

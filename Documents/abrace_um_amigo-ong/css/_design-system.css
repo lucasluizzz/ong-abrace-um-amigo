@@ -1,0 +1,35 @@
+:root {
+    --cor-primaria: #FFB067;
+    --cor-primaria-clara: #FFD2A8;
+    --cor-primaria-escura: #E89C57;
+    
+    --cor-secundaria: #FF69B4;
+    --cor-alerta: #fc5353;
+    --cor-sucesso: #8BC34A;
+
+    --cor-lilás-patinha: #B28DFF;
+
+    --cor-neutra-escura: #000000;
+    --cor-neutra-clara: #F8F9FA;
+    --cor-texto-claro: #FFFFFF;
+    
+    --cor-texto-principal: var(--cor-neutra-escura);
+    --cor-borda: #CED4DA;
+
+    --fonte-padrao: 'Arial', sans-serif; 
+    --fonte-h1: 3rem;
+    --fonte-h2: 2.5rem;
+    --fonte-h3: 2rem;
+    --fonte-corpo: 1rem;
+    --fonte-pequena: 0.875rem; 
+
+    --espaco-xs: 8px;
+    --espaco-sm: 16px;
+    --espaco-md: 24px;
+    --espaco-lg: 32px;
+    --espaco-xl: 48px;
+    --espaco-xxl: 64px;
+    
+    --raio-borda-sm: 4px;
+    --raio-borda-md: 8px;
+}

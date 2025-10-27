@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início | Abrace Um Amigo</title> 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <h1>Abrace Um Amigo: Resgate e Adoção</h1>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
+        <h1>Abrace Um Amigo</h1>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
-    <nav>
+    <nav id="menu-principal">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="projetos.html">Projetos Sociais</a></li>
+            <li class="nav-item-dropdown"><a href="projetos.html">Projetos Sociais</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="doacoes.html">Como Doar</a></li>
             <li><a href="transparencia.html">Transparência</a></li>
@@ -26,67 +37,82 @@
     </nav>
 
     <main>
-        
-        <figure>
-            <img src="img/banner_principal.jpeg" alt="Cão e Gato abraçados. Destaque para adoção." loading="lazy">
-            <figcaption>Mais de 5.000 vidas transformadas pela adoção.</figcaption>
-        </figure>
+        <div class="container">
+            
+            <figure>
+                <img src="img/banner_principal.jpeg" alt="Cão e Gato abraçados. Destaque para adoção." loading="lazy">
+                <figcaption>Mais de 5.000 vidas transformadas pela adoção.</figcaption>
+            </figure>
 
-        <section>
-            <h2>Destaques da Semana</h2>
-            <p>Confira as histórias mais recentes, campanhas urgentes e eventos.</p>
+            <section>
+                <h2>Destaques da Semana</h2>
+                <p>Confira as histórias mais recentes, campanhas urgentes e eventos.</p>
 
-            <article>
-                <h3>Precisamos de Lar Temporário para 5 Filhotes</h3>
-                <figure>
-                    <img src="img/destaque_filhotes.jpeg" alt="Cinco filhotes recém-resgatados em uma caixa." loading="lazy">
-                    <figcaption>Os filhotes precisam de um lar seguro para receber vacinas.</figcaption>
-                </figure>
-                <p>O resgate emergencial desta semana trouxe 5 vidas ao abrigo. Eles são saudáveis, mas precisam de cuidado especial. <a href="projetos.html">Saiba como ser um Lar Temporário.</a></p>
-                <p><small>Publicado em: <time datetime="2025-10-17">17 de Outubro de 2025</time></small></p>
-            </article>
+                <div class="container-cards">
+                    <article>
+                        <h3>Precisamos de Lar Temporário para 5 Filhotes</h3>
+                        <figure>
+                            <img src="img/destaque_filhotes.jpeg" alt="Cinco filhotes recém-resgatados em uma caixa." loading="lazy">
+                            <figcaption>Os filhotes precisam de um lar seguro para receber vacinas.</figcaption>
+                        </figure>
+                        <p>O resgate emergencial desta semana trouxe 5 vidas ao abrigo. Eles são saudáveis, mas precisam de cuidado especial. <a href="projetos.html">Saiba como ser um Lar Temporário.</a></p>
+                        <p><small>Publicado em: <time datetime="2025-10-17">17 de Outubro de 2025</time></small></p>
+                    </article>
 
-            <article>
-                <h3>Sucesso! Cão Scooby Encontra Seu Lar Final</h3>
-                <figure>
-                    <img src="img/destaque_scooby.jpeg" alt="Família adotando o cão Scooby." loading="lazy">
-                    <figcaption>Após 8 meses, Scooby foi adotado no último sábado!</figcaption>
-                </figure>
-                <p>Scooby chegou à AUA com problemas de saúde, mas foi recuperado e, finalmente, encontrou sua família. Veja a história completa e inspire-se. <a href="blog.html#scooby">Leia o post no Blog.</a></p>
-                <p><small>Publicado em: <time datetime="2025-10-15">15 de Outubro de 2025</time></small></p>
-            </article>
+                    <article>
+                        <h3>Sucesso! Cão Scooby Encontra Seu Lar Final</h3>
+                        <figure>
+                            <img src="img/destaque_scooby.jpeg" alt="Família adotando o cão Scooby." loading="lazy">
+                            <figcaption>Após 8 meses, Scooby foi adotado no último sábado!</figcaption>
+                        </figure>
+                        <p>Scooby chegou à AUA com problemas de saúde, mas foi recuperado e, finalmente, encontrou sua família. Veja a história completa e inspire-se. <a href="blog.html#scooby">Leia o post no Blog.</a></p>
+                        <p><small>Publicado em: <time datetime="2025-10-15">15 de Outubro de 2025</time></small></p>
+                    </article>
 
-            <a href="blog.html">Ver Mais Notícias e Destaques da Semana</a>
-        </section>
-        
-        <section>
-            <h2>Perguntas Frequentes (FAQ)</h2>
-            <details>
-                <summary>Como posso adotar um animal resgatado?</summary>
-                <p>O processo de adoção começa preenchendo o formulário em nossa página de Projetos Sociais, especificamente na seção de Feiras de Adoção. Após a análise, entraremos em contato para uma entrevista e visita prévia.</p>
-            </details>
-            <details>
-                <summary>Onde a ONG Abrace Um Amigo atua?</summary>
-                <p>Atualmente, focamos nossas operações nas região metropolitana do Rio Grande Do Sul, mas realizamos campanhas de conscientização em nível nacional.</p>
-            </details>
-            <details>
-                <summary>É possível fazer doações de ração ou cobertores?</summary>
-                <p>Sim! Aceitamos doações de itens físicos. Entre em contato através da página Contato para agendar a retirada ou entrega no nosso ponto de apoio mais próximo.</p>
-            </details>
-        </section>
-        
-        <section>
-            <h2>Fique por Dentro das Nossas Ações</h2>
-            <p>Cadastre seu e-mail para receber notícias da Abrace Um Amigo (AUA).</p>
+                    <article>
+                        <h3>Campanha de Inverno: Doe Ração e Aqueça Uma Vida</h3>        
+                        <figure>
+                            <img src="img/doacao_racao.jpeg" alt="Sacos de ração doados em um centro de distribuição." loading="lazy">
+                            <figcaption>A meta da campanha é arrecadar 2 toneladas de ração para o período de frio.</figcaption>
+                        </figure>
 
-            <form action="#" method="post">
-                <label for="news_email">Seu Melhor E-mail:</label>
-                <input type="email" id="news_email" name="news_email" placeholder="seu.email@exemplo.com" required>
+                        <p>Com a aproximação dos meses mais frios, a necessidade de ração aumenta exponencialmente. Nossos abrigos estão com mais de 300 animais dependendo da sua ajuda. <a href="blog.html#scooby">Leia o post no Blog.</a></p>
+                        <p><small>Publicado em: <time datetime="2025-10-13">13 de Outubro de 2025</time></small></p>
+                    </article>                </div>
+                
+                <a href="blog.html" class="btn-acao">Ver Mais Notícias e Destaques da Semana</a>
+            </section>
+            
+            <div class="grid-12-col">
+                <section class="col-8">
+                    <h2>Perguntas Frequentes (FAQ)</h2>
+                    <details>
+                        <summary>Como posso adotar um animal resgatado?</summary>
+                        <p>O processo de adoção começa preenchendo o formulário em nossa página de Projetos Sociais, especificamente na seção de Feiras de Adoção. Após a análise, entraremos em contato para uma entrevista e visita prévia.</p>
+                    </details>
+                    <details>
+                        <summary>Onde a ONG Abrace Um Amigo atua?</summary>
+                        <p>Atualmente, focamos nossas operações nas região metropolitana do Rio Grande Do Sul, mas realizamos campanhas de conscientização em nível nacional.</p>
+                    </details>
+                    <details>
+                        <summary>É possível fazer doações de ração ou cobertores?</summary>
+                        <p>Sim! Aceitamos doações de itens físicos. Entre em contato através da página Contato para agendar a retirada ou entrega no nosso ponto de apoio mais próximo.</p>
+                    </details>
+                </section>
+                
+                <section class="col-4">
+                    <h2>Fique por Dentro das Nossas Ações</h2>
+                    <p>Cadastre seu e-mail para receber notícias da Abrace Um Amigo (AUA).</p>
 
-                <button type="submit">Assinar Agora</button>
-            </form>
-        </section>
+                    <form action="#" method="post">
+                        <label for="news_email">Seu Melhor E-mail:</label>
+                        <input type="email" id="news_email" name="news_email" placeholder="seu.email@exemplo.com" required>
 
+                        <button type="submit">Assinar Agora</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
     
     <footer>

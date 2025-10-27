@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transparência | Abrace Um Amigo</title> 
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
         <h1>Abrace Um Amigo</h1>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     </header>
 
-    <nav>
+    <nav id="menu-principal">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -26,48 +37,53 @@
     </nav>
 
     <main>
-        <h1>Prestação de Contas e Relatórios</h1>
+        <div class="container">
+            
+            <h1>Transparência e Prestação de Contas</h1>
 
-        <figure>
+            <p>Acreditamos que a confiança é a base de nossa relação com apoiadores. Por isso, mantemos todas as nossas informações financeiras e administrativas abertas ao público.</p>
+
+            <figure>
             <img src="img/prestacao_contas.jpeg" alt="Pessoa revisando documentos financeiros e gráficos." loading="lazy">
             <figcaption>Clareza e responsabilidade na gestão dos recursos.</figcaption>
-        </figure>
+            </figure>
 
-        <section>
-            <h2>Documentos Oficiais</h2>
-            <p>Nosso compromisso é com a clareza total na aplicação dos recursos e na gestão da ONG. Abaixo, você encontra nossos principais documentos públicos.</p>
 
-            <dl>
-                <dt>Estatuto Social</dt>
-                <dd>Documento que define a finalidade, estrutura e regras de funcionamento da Abrace Um Amigo. (Atualizado em <time datetime="2024">2024</time>)</dd>
+            <section>
+                <h2>Documentos Importantes</h2>
+                <dl>
+                    <dt><a href="index.html">Estatuto Social</a></dt>
+                    <dd>Regras e objetivos da ONG. (Atualizado em <time datetime="2024">2024</time>).</dd>
 
-                <dt>Balanço Anual - 2023</dt>
-                <dd>Relatório financeiro completo detalhando receitas (doações) e despesas (veterinária, ração, logística) do ano fiscal anterior.</dd>
+                    <dt><a href="index.html">Balanço Patrimonial</a></dt>
+                    <dd>Relatório anual de receitas e despesas (veterinária, ração, logística) do ano fiscal anterior.</dd>
 
-                <dt>Certificado de Utilidade Pública Federal</dt>
-                <dd>Documento que atesta o reconhecimento da ONG pelo Governo Federal. (Emitido em <time datetime="2020">2020</time>)</dd>
+                    <dt><a href="index.html">Certificado de Utilidade Pública Federal</a></dt>
+                    <dd>Documento que atesta o reconhecimento da ONG pelo Governo Federal. (Emitido em <time datetime="2020">2020</time>).</dd>
 
-                <dt>Regulamento Interno para Voluntários</dt>
-                <dd>Conjunto de normas e diretrizes para garantir a segurança e o bem-estar de todos os voluntários e animais.</dd>
-            </dl>
-        </section>
+                    <dt><a href="index.html">Regulamento Interno para Voluntários</a></dt>
+                    <dd>Conjunto de normas e diretrizes para garantir a segurança e o bem-estar de todos os voluntários e animais.</dd>
+                </dl>
+            </section>
 
-        <section>
-            <h2>Distribuição de Recursos por Projeto (Gráfico de Pizza)</h2>
-            <p>Detalha como cada real doado é investido nas nossas áreas de atuação.</p>
-            <canvas id="graficoPizza" width="600" height="300">Seu navegador não suporta o elemento canvas. Por favor, visualize a tabela de dados.</canvas>
-        </section>
+            <section>
+                <h2>Distribuição de Recursos por Projeto</h2>
+                <p>Detalha como cada real doado é investido nas nossas áreas de atuação.</p>
+                <canvas id="graficoPizza" width="600" height="300">Seu navegador não suporta o elemento canvas. Por favor, visualize a tabela de dados.</canvas>
+            </section>
 
-        <section>
-            <h2>Metas e Progresso</h2>
-            <p>Acompanhe nosso progresso em tempo real nas campanhas ativas.</p>
-            <progress id="meta_castracao" max="1000" value="850">85%</progress>
-            <label for="meta_castracao">Castrações (Meta: 1000)</label>
-            
-            <progress id="meta_adocoes" max="500" value="380">76%</progress>
-            <label for="meta_adocoes">Adoções (Meta: 500)</label>
-        </section>
-
+            <section>
+                <h2>Metas e Progresso</h2>
+                <p>Acompanhe nosso progresso em tempo real nas campanhas ativas.</p>
+                
+                <label for="meta_castracao">Castrações (Meta: 1000)</label>
+                <progress id="meta_castracao" max="1000" value="850">85%</progress>
+                
+                <label for="meta_adocoes">Adoções (Meta: 500)</label>
+                <progress id="meta_adocoes" max="500" value="380">76%</progress>
+            </section>
+        
+        </div>
     </main>
     
     <footer>
