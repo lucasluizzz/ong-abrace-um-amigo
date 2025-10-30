@@ -129,6 +129,23 @@ button:disabled {
     transform: translateY(-5px);
 }
 
+.card {
+    background-color: var(--cor-texto-claro);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda-sm);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: var(--espaco-md); 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
 @media (min-width: 768px) {
     .container-cards {
         grid-template-columns: repeat(2, 1fr); 
@@ -214,6 +231,7 @@ button:disabled {
 
 .badge-primario {
     background-color: var(--cor-primaria);
+    color: var(--cor-neutra-escura);
 }
 
 .badge-secundario {
@@ -223,4 +241,86 @@ button:disabled {
 
 .badge-sucesso {
     background-color: var(--cor-sucesso);
+}
+
+input.invalido,
+textarea.invalido,
+select.invalido {
+    border: 1px solid var(--cor-alerta); 
+    box-shadow: 0 0 5px rgba(252, 83, 83, 0.5); /* Sombra sutil de alerta */
+}
+
+.msg-erro {
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-alerta);
+    padding: var(--espaco-xs);
+    margin-top: var(--espaco-xs);
+    border-radius: var(--raio-borda-sm);
+    font-size: var(--fonte-pequena);
+    font-weight: bold;
+}
+
+#app-content.loading-content {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 100px;
+    font-size: var(--fonte-h2);
+    font-weight: bold;
+    color: var(--cor-primaria-escura);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from { opacity: 0.7; }
+    to { opacity: 1; }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: var(--espaco-lg);
+    
+    max-width: 1200px;
+    margin: var(--espaco-lg) auto; 
+    padding: 0 var(--espaco-md);
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+.blog-post-card {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-card figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-post-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-card .btn-acao {
+    margin-top: auto;
 }
