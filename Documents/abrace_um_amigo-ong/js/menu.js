@@ -20,3 +20,18 @@ window.closeMenu = () => {
         menuButton.setAttribute('aria-expanded', 'false');
     }
 };
+
+const handleKeyboard = (event) => {
+    if (event.key === 'Escape' && navMenu.classList.contains('ativo')) {
+        closeMenu();
+        menuButton.focus(); 
+    }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (menuButton) {
+        menuButton.addEventListener('click', toggleMenu);
+    }
+    
+    document.addEventListener('keydown', handleKeyboard);
+});
