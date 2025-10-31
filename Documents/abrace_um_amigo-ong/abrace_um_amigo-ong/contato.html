@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Abrace Um Amigo</title> 
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
+        <h1>Abrace Um Amigo</h1>
+        </div>
+        <button id="theme-toggle" class="btn-toggle-theme" aria-label="Alternar para Modo Escuro/Claro"> 🌙 </button>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    </header>
+
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos Sociais</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacoes.html">Como Doar</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main id="app-content">
+        <div class="container">
+            
+            <h1>Fale Conosco</h1>
+            
+            <figure>
+                <img src="img/equipe_atendimento.jpeg" alt="Pessoa sorrindo em um telefone de atendimento." loading="lazy">
+                <figcaption>Nossa equipe está pronta para te atender.</figcaption>
+            </figure>
+            
+            <section>
+                <h2>Informações de Contato</h2>
+                <address>
+                    <strong>Endereço Sede:</strong> Rua dos Resgates, 100 - Porto Alegre, RS<br>
+                    <strong>Telefone:</strong> <a href="tel:+5511987654321">(51) 98765-4321</a><br>
+                    <strong>E-mail:</strong> <a href="mailto:contato@abraceumamigo.org">contato@abraceumamigo.org</a>
+                </address>
+                <p>Nosso horário de atendimento é de Segunda a Sexta, das 9h às 18h.</p>
+            </section>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" list="listaAssuntos" placeholder="Ex: Doação de ração">
+                    <datalist id="listaAssuntos">
+                        <option value="Dúvida Geral"></option>
+                        <option value="Interesse em Adoção"></option>
+                        <option value="Interesse em Voluntariado"></option>
+                        <option value="Sugestão / Reclamação"></option>
+                        <option value="Parceria Institucional"></option>
+                    </datalist>
+
+                    <label for="urgencia">Nível de Urgência (1=Baixa, 10=Máxima):</label>
+                    <input type="range" id="urgencia" name="urgencia" min="1" max="10" step="1" value="5">
+                    
+                    <label for="mensagem">Mensagem Detalhada:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+            
+                    <label for="anexo">Anexar Documento ou Imagem (Opcional):</label>
+                    <input type="file" id="anexo" name="arquivo_anexo" accept=".pdf, .doc, .png, .jpg">
+            
+                </fieldset>
+
+                <button type="submit">Enviar Contato</button>
+        
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Abrace Um Amigo. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/dark-mode.js"></script>  <script src="js/menu.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/spa.js"></script>
+</body>
+</html>
