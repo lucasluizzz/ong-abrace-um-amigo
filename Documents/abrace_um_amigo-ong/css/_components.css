@@ -324,3 +324,18 @@ select.invalido {
 .blog-post-card .btn-acao {
     margin-top: auto;
 }
+
+.btn-toggle-theme {
+    background: none;
+    border: none;
+    color: var(--cor-texto-claro); 
+    font-size: var(--fonte-h3); 
+    cursor: pointer;
+    padding: var(--espaco-sm);
+    transition: transform 0.2s ease;
+    align-self: center;
+}
+
+.btn-toggle-theme:hover {
+    transform: scale(1.1);
+}
