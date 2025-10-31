@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência | Abrace Um Amigo</title> 
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/_design-system.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_components.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+        <img src="img/ong_logo.png" alt="Logo Abrace Um Amigo - Patinha" class="logo-header">
+        <h1>Abrace Um Amigo</h1>
+        </div>
+        <button id="theme-toggle" class="btn-toggle-theme" aria-label="Alternar para Modo Escuro/Claro"> 🌙 </button>
+        <button class="menu-hamburguer" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    </header>
+
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos Sociais</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="doacoes.html">Como Doar</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main id="app-content">
+        <div class="container">
+            
+            <h1>Transparência e Prestação de Contas</h1>
+
+            <p>Acreditamos que a confiança é a base de nossa relação com apoiadores. Por isso, mantemos todas as nossas informações financeiras e administrativas abertas ao público.</p>
+
+            <figure>
+            <img src="img/prestacao_contas.jpeg" alt="Pessoa revisando documentos financeiros e gráficos." loading="lazy">
+            <figcaption>Clareza e responsabilidade na gestão dos recursos.</figcaption>
+            </figure>
+
+
+            <section>
+                <h2>Documentos Importantes</h2>
+                <dl>
+                    <dt><a href="index.html">Estatuto Social</a></dt>
+                    <dd>Regras e objetivos da ONG. (Atualizado em <time datetime="2024">2024</time>).</dd>
+
+                    <dt><a href="index.html">Balanço Patrimonial</a></dt>
+                    <dd>Relatório anual de receitas e despesas (veterinária, ração, logística) do ano fiscal anterior.</dd>
+
+                    <dt><a href="index.html">Certificado de Utilidade Pública Federal</a></dt>
+                    <dd>Documento que atesta o reconhecimento da ONG pelo Governo Federal. (Emitido em <time datetime="2020">2020</time>).</dd>
+
+                    <dt><a href="index.html">Regulamento Interno para Voluntários</a></dt>
+                    <dd>Conjunto de normas e diretrizes para garantir a segurança e o bem-estar de todos os voluntários e animais.</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Metas e Progresso</h2>
+                <p>Acompanhe nosso progresso em tempo real nas campanhas ativas.</p>
+                
+                <label for="meta_castracao">Castrações (Meta: 1000)</label>
+                <progress id="meta_castracao" max="1000" value="850">85%</progress>
+                
+                <label for="meta_adocoes">Adoções (Meta: 500)</label>
+                <progress id="meta_adocoes" max="500" value="380">76%</progress>
+            </section>
+        
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 Abrace Um Amigo. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/dark-mode.js"></script>  <script src="js/menu.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/spa.js"></script>
+</body>
+</html>
